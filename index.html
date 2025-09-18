@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitZone Gym</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(135deg, rgb(30,30,30),rgb(70,70,70),rgb(30,30,30));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            height: 600px;
+            width: 300px;
+            border-radius: 20px;
+            justify-content: center;
+            box-shadow: 0px 4px 9px 1px rgb(128, 89, 255);
+        }    
+        header{
+            height: 25%;
+            width: 100%;
+            background: linear-gradient(to bottom right, #ff795e,#F54927,#F54927);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        header h1{
+            font-family: fantasy;
+            text-shadow: 0px 3px 3px rgb(212, 212, 212);
+        }
+        header p{
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        .icon{
+            background-color: #27D3F5;
+            border-radius: 100%;
+            padding: 8px;
+            font-size: 24px;
+            box-shadow: 0px 3px 10px #27D3F5;
+        }
+        section{
+            height: 60%;
+            width: 100%;
+            background-color: #27F549;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            font-family: sans-serif;
+        }
+        /*Primary Items*/
+        .item{
+            background: linear-gradient(to right, rgb(100,0,200), rgb(50,0,100) );
+            width: 80%;
+            border-radius: 10px;
+            color: rgb(235, 234, 234);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px;
+            font-size: 12px;
+            font-family: sans-serif;
+            text-shadow: 0px 1px 5px rgb(146, 145, 145);
+            box-shadow: 0px 4px 4px rgb(70,0,100);
+        }
+        /*Monthly Membership*/
+        .item2{
+            display: flex;
+            width: 80%;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(to bottom right, rgb(200,20,20), rgb(100,0,0), rgb(70,0,0) );
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            text-shadow: 0px 1px 5px rgb(146, 145, 145);
+            font-family: sans-serif;
+            box-shadow: 0px 4px 4px rgb(70,0,0);
+        }
+        /*Different Size and Color for Price*/
+        .price{
+            font-size: 32px;
+            color: rgb(169, 202, 254);
+        }
+        footer{
+            height: 15%;
+            width: 100%;
+            background:linear-gradient(to bottom right, #7b8aff, #4927F5,#4927F5) ;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            font-size: 12px;
+            text-shadow: 0px 1px 5px rgb(70, 70, 70);
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Overall Container -->
+    <main class="container">
+        <!--Top Section-->
+        <header> 
+            <h1>FitZone</h1>
+            <p>Transform Your Body</p>
+            <div class="icon">💪</div>
+        </header>
+        <!--Middle Section-->
+        <section>
+            <h2>Training Programs</h2>
+            <div class="item"> 
+                <h3>Weight Training</h3>
+                <p>Build strength with our equipment</p>
+            </div>
+            <div class="item">
+                <h3>Cardio Classes</h3>
+                <p>High-energy group workouts</p>
+            </div>
+            <div class="item">
+                <h3>Personal Training</h3>
+                <p>One-on-one coaching sessions</p>
+            </div>
+            <div class="item">
+                <h3>Yoga & Pilates</h3>
+                <p>Build strength with our equipment</p>
+            </div>
+            <div class="item2">
+                <h3>Monthly Membership</h3>
+                <p class="price">$39</p>
+                <p>Unlimited Access</p>
+            </div>
+        </section>
+        <!--Bottom Section-->
+        <footer>
+            <h2>Visit Our Gym</h2>
+            <address><p>785 Fitness Street</p></address>
+            <p>Open 24/7</p>
+        </footer>
+    </main>
+    
+</body>
+</html>
